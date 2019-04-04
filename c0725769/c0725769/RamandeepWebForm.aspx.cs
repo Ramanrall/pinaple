@@ -11,7 +11,20 @@ namespace c0725769
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!Page.IsPostBack)
+            {
+                ItMessage.Text = "welcomne here";
 
+                // validate e mail and stoe it into dtabase
+
+                ItMessage.Text = "you are done with newsletter signUp";
+
+            }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            String email = txtEmail.Text;
         }
     }
 }
